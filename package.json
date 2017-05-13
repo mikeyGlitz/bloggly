@@ -4,16 +4,21 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --config __config__/webpack.config.js",
-    "dev-server": "webpack-dev-server --config __config__/webpack.config.js",
+    "dev-server": "nodemon index.js",
     "test": "jest -c __config__/jest.config.json",
     "docs": "jsdoc . -c __config__/jsdoc.json",
     "lint": "eslint ."
   },
   "dependencies": {
     "babel-jest": "^18.0.0",
+    "babel-register": "^6.24.1",
+    "express": "^4.15.2",
     "jsdoc": "^3.4.3",
+    "morgan": "^1.8.1",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "webpack": "^2.5.1",
+    "webpack-dev-middleware": "^1.10.2"
   },
   "devDependencies": {
     "@easy-webpack/config-common-chunks-simple": "^2.0.3",
@@ -48,10 +53,9 @@
     "jest": "^18.1.0",
     "json-loader": "^0.5.4",
     "lodash-webpack-plugin": "^0.10.7",
+    "nodemon": "^1.11.0",
     "react-addons-test-utils": "^15.4.2",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.2.1"
+    "url-loader": "^0.5.7"
   }
 }
