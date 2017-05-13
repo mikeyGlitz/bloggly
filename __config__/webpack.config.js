@@ -69,7 +69,7 @@ let config = generateConfig(
   generateIndex({
     minify: env === 'production',
     overrideOptions: {
-      title, version, template
+      title, version, template, filename: 'main.html'
     }
   })
 );
