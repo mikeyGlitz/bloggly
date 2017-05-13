@@ -1,0 +1,29 @@
+{
+  "tags": {
+    "dictionaries": ["jsdoc"]
+  },
+  "source":{
+    "includePattern": ".+\\.jsx?$",
+    "exclude": [
+      "__tests__",
+      "node_modules",
+      "docs",
+      "coverage",
+      "public"
+    ]
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "opts": {
+    "recurse": true,
+    "destination": "docs",
+    "readme": "README.md",
+    "package": "package.json"
+  },
+  "templates":{
+    "default":{
+      "outputSourceFiles": true
+    }
+  }
+}
